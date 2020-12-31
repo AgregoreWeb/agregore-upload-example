@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title>Agregore Upload</title>
+<!--
+The CSS here is awful, please don't learn from it. 😂
+
+Honestly, the JS is pretty bad too.
+
+The HTML isn't too bad though...
+-->
+<style>
+@import url("./style.css");
+</style>
+
+<h1>Agregore Upload</h1>
+
+<form class="hidden">
+	<p>
+		Upload a file and copy the URL.
+	</p>
+	<label>
+		Protocol:
+		<select>
+			<option>hyper://</option>
+			<option>ipfs://</option>
+		</select>
+	</label>
+
+	<input required type="file" id="file"/>
+	<button type="submit">
+		Upload
+	</button>
+</form>
+
+<section id="url-container" class="hidden">
+	<button id="url">hyper://asdasdasdasdasd/foobar.txt</button>
+</section>
+
+<section id="loader-container">
+	<div id="loader" aria-label="Loading">♺</div>
+</section>
+
+<script src="./script.js"></script>

@@ -1,0 +1,61 @@
+@import url("agregore://theme/style.css");
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 1em auto;
+  padding: 1em;
+  border: 0.5em dashed var(--ag-theme-primary);
+}
+label {
+  margin: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  background: var(--ag-theme-primary);
+  border: none;
+}
+button:hover, button:active {
+  background: var(--ag-theme-secondary);
+}
+input[type=file] {
+  display: block;
+  margin: 0.5em;
+}
+section {
+  padding: 1em 0px;
+  text-align: center;
+  overflow-x: auto;
+}
+#loader {
+  display: inline-block;
+  font-size: 4em;
+  transform-origin: 50% 50%;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+
+#url {
+  user-select: all;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.hidden {
+  display: none;
+}
